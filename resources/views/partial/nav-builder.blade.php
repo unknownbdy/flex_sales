@@ -6,21 +6,25 @@ $settings = Utility::settings();
 
 @endphp
 <style>
-    .dash-sidebar.light-sidebar .dash-link {
+   .dash-sidebar.light-sidebar .dash-link {
     color: #ffffff !important;
     font-size: 14px !important;
 }
 
 .dash-sidebar.light-sidebar .dash-item.active > .dash-link, .dash-sidebar.light-sidebar .dash-item:hover > .dash-link{
-    background-color: #406386;
+    background-color: #ffffff38;
     border-radius: 8px;
     margin-right: 26px;
 }
 
 body.theme-1 .dash-sidebar.light-sidebar .dash-navbar > .dash-item.active > .dash-link, body.theme-1 .dash-sidebar.light-sidebar .dash-navbar > .dash-item:active > .dash-link, body.theme-1 .dash-sidebar.light-sidebar .dash-navbar > .dash-item:focus > .dash-link, body.theme-1 .dash-sidebar.light-sidebar .dash-navbar > .dash-item:hover > .dash-link, body.theme-1 .dash-sidebar .dash-navbar > .dash-item.active > .dash-link, body.theme-1 .dash-sidebar .dash-navbar > .dash-item:active > .dash-link, body.theme-1 .dash-sidebar .dash-navbar > .dash-item:focus > .dash-link, body.theme-1 .dash-sidebar .dash-navbar > .dash-item:hover > .dash-link{
-    background: linear-gradient(150.55deg, rgba(87, 69, 157, 0) 3.46%, rgba(255, 100, 91, 0.7) 122.86%), #003182;
-    color: #fff;
-    box-shadow: 0 11px 12px 7px rgba(101, 93, 195, 0.3);
+    background: #fff;
+    color: #000 !important;
+    box-shadow: -3px 4px 23px rgba(0, 0, 0, 0.1);
+}
+
+body.theme-1 .dash-sidebar.light-sidebar .dash-navbar > .dash-item.active > .dash-link i, body.theme-1 .dash-sidebar.light-sidebar .dash-navbar > .dash-item:active > .dash-link i, body.theme-1 .dash-sidebar.light-sidebar .dash-navbar > .dash-item:focus > .dash-link i, body.theme-1 .dash-sidebar.light-sidebar .dash-navbar > .dash-item:hover > .dash-link i, body.theme-1 .dash-sidebar .dash-navbar > .dash-item.active > .dash-link, body.theme-1 .dash-sidebar .dash-navbar > .dash-item:active > .dash-link i, body.theme-1 .dash-sidebar .dash-navbar > .dash-item:focus > .dash-link i, body.theme-1 .dash-sidebar .dash-navbar > .dash-item:hover > .dash-link i{
+    color: #000 !important
 }
 
 .card {
@@ -132,11 +136,15 @@ body.theme-1 .progress-bar:not([class*="bg-"]), body.theme-1 .btn-primary {
      word-break: break-all !important;
      white-space: normal !important;
  }
+ .dash-sidebar.light-sidebar .dash-hasmenu.active .dash-link .dash-micon,.dash-sidebar.light-sidebar .dash-hasmenu:hover .dash-link .dash-micon {
+    background-color: #1c1c2114 !important;
+    box-shadow: -3px 4px 23px rgba(0, 0, 0, 0.1);
+}
 
 </style>
 
 <!-- [ navigation menu ] start -->
-<nav class="dash-sidebar light-sidebar transprent-bg" style="background: #415189;border-right: 1px solid;color: #ffffff;
+<nav class="dash-sidebar light-sidebar transprent-bg" style="background: #0D0E12;border-right: 1px solid;color: #ffffff;
     font-size: 14px;">
     <div class="navbar-wrapper">
         <div class="m-header justify-content-center">
@@ -150,7 +158,7 @@ body.theme-1 .progress-bar:not([class*="bg-"]), body.theme-1 .btn-primary {
                     height="46" class="navbar-brand-img">
                 @else
                 <img class="c-sidebar-brand-full pt-3 mt-2 mb-1"
-                    src="{{ $logo . (isset($company_logo) && !empty($company_logo) ? $company_logo : 'insijam-white-logo.png') }}"
+                    src="{{ $logo . (isset($company_logo) && !empty($company_logo) ? $company_logo : 'insijam-logo.webp') }}"
                     height="80" class="navbar-brand-img">
                     <!-- <p style="
     color: #fff;
