@@ -150,6 +150,7 @@ body.theme-1 .progress-bar:not([class*="bg-"]), body.theme-1 .btn-primary {
         <div class="m-header justify-content-center">
             <a href="{{ route('home') }}" class="b-brand">
                 <!-- ========   change your logo hear   ============ -->
+                
 
                 @if (isset($settings['dark_mode']))
                 @if ($settings['dark_mode'] == 'on')
