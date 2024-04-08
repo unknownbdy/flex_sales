@@ -13,7 +13,6 @@ npm-debug.log
 yarn-error.log
 /.idea
 /.vscode
-/vendor
 .htaccess
 app/.DS_Store
 .DS_Store*
