@@ -142,6 +142,7 @@ body.theme-1 .progress-bar:not([class*="bg-"]), body.theme-1 .btn-primary {
 }
 </style>
 
+
 <!-- [ navigation menu ] start -->
 <nav class="dash-sidebar light-sidebar transprent-bg" style="background: #0D0E12;border-right: 1px solid;color: #ffffff;
     font-size: 14px;">
